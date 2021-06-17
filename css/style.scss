@@ -1,0 +1,223 @@
+@import "_varibels.scss";
+@import "_font.scss";
+
+
+@mixin mq($size) {
+    @media only screen and (max-width: $size+px) {
+        @content;
+    }
+}
+
+@mixin mqm($size) {
+    @media only screen and (min-width: $size+px) {
+        @content;
+    }
+}
+
+input,
+textarea,
+button {
+    font-family: $mainFont;
+    outline: none;
+}
+
+
+
+body {
+    transition: all 0.6s;
+    font-family: $mainFont;
+    color: $gray100;
+    margin: 0;
+    padding: 0;
+
+}
+
+// global style
+
+
+
+
+main {
+    position: relative;
+    height: 100vh;
+    padding-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .time_btn {
+        all: unset;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 24px;
+        left: 5%;
+
+        @include mq(520) {
+            top: 10px;
+            left: 43%;
+            transform: translate(0%);
+        }
+
+        cursor: pointer;
+
+        img {
+            width: 55px;
+            height: 55px;
+        }
+    }
+
+    h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 20px;
+
+        @include mq(520) {
+            margin-top: 200px;
+        }
+        @include mq(360) {
+            font-size: 25px;
+        }
+    }
+
+    .answer {
+        direction: rtl;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        font-size: 20px;
+        margin-bottom: 50px;
+        font-weight: 300;
+        height: 100px;
+
+        .num {
+            align-self: center;
+            font-size: 90px;
+            font-weight: bold;
+        }
+    }
+
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        input,
+        select {
+            border: 1px solid $drak200;
+            outline: none;
+            margin-bottom: 25px;
+            width: 446px;
+            height: 50px;
+            padding: 0 17px;
+            display: flex;
+            font-weight: 300;
+            font-size: 20px;
+            align-items: center;
+            justify-content: center;
+            box-sizing: content-box;
+            font-family: $mainFont;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            text-indent: 1px;
+            text-overflow: '';
+            cursor: pointer;
+            border-radius: 4px;
+
+            @include mq(520) {
+                width: 290px;
+            }
+
+            @include mq(360) {
+                width: 250px;
+            }
+
+
+        }
+
+        select {
+            z-index: 100;
+            &:invalid{
+                color: $dark300;
+            }
+
+            option {
+                padding: 0 30px 0 10px;
+                min-height: 40px;
+                display: flex;
+                align-items: center;
+                box-sizing: content-box;
+                font-family: $mainFont;
+
+                &[value=""] {
+                    display: none;
+                }
+            }
+
+            background: url(../img/1.png) $white;
+            background-repeat: no-repeat;
+            background-position-x: 95%;
+            background-position-y: 50%;
+        }
+
+    }
+
+    .btns {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include mq(520) {
+            flex-direction: column;
+        }
+
+        #sub,
+        #del {
+            width: 179px;
+            height: 60px;
+            border-radius: 4px;
+            color: $white;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        #sub {
+            background: $green100;
+
+            @include mq(520) {
+                margin-bottom: 10px;
+            }
+        }
+
+        #del {
+            background: $yellow100;
+        }
+    }
+}
+
+
+
+
+
+// java script classes
+
+.night {
+    background: $dark100;
+    color: $white;
+}

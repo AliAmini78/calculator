@@ -1,0 +1,332 @@
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/eot/iranyekanwebbold.eot");
+  src: url("../fonts/eot/iranyekanwebbold.eot?#iefix") format("embedded-opentype"), url("../fonts/woff/iranyekanwebbold.woff") format("woff"), url("../fonts/ttf/iranyekanwebbold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/eot/iranyekanwebthin.eot");
+  src: url("../fonts/eot/iranyekanwebthin.eot?#iefix") format("embedded-opentype"), url("../fonts/woff/iranyekanwebthin.woff") format("woff"), url("../fonts/ttf/iranyekanwebthin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/eot/iranyekanweblight.eot");
+  src: url("../fonts/eot/iranyekanweblight.eot?#iefix") format("embedded-opentype"), url("../fonts/woff/iranyekanweblight.woff") format("woff"), url("../fonts/ttf/iranyekanweblight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/eot/iranyekanwebregular.eot");
+  src: url("../fonts/eot/iranyekanwebregular.eot?#iefix") format("embedded-opentype"), url("../fonts/woff/iranyekanwebregular.woff") format("woff"), url("../fonts/ttf/iranyekanwebregular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/eot/iranyekanwebmedium.eot");
+  src: url("../fonts/eot/iranyekanwebmedium.eot?#iefix") format("embedded-opentype"), url("../fonts/woff/iranyekanwebmedium.woff") format("woff"), url("../fonts/ttf/iranyekanwebmedium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/eot/iranyekanwebextrabold.eot");
+  src: url("../fonts/eot/iranyekanwebextrabold.eot?#iefix") format("embedded-opentype"), url("../fonts/woff/iranyekanwebextrabold.woff") format("woff"), url("../fonts/ttf/iranyekanwebextrabold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/eot/iranyekanwebblack.eot");
+  src: url("../fonts/eot/iranyekanwebblack.eot?#iefix") format("embedded-opentype"), url("../fonts/woff/iranyekanwebblack.woff") format("woff"), url("../fonts/ttf/iranyekanwebblack.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: 950;
+  src: url("../fonts/eot/iranyekanwebextrablack.eot");
+  src: url("../fonts/eot/iranyekanwebextrablack.eot?#iefix") format("embedded-opentype"), url("../fonts/woff/iranyekanwebextrablack.woff") format("woff"), url("../fonts/ttf/iranyekanwebextrablack.ttf") format("truetype");
+}
+
+input,
+textarea,
+button {
+  font-family: iranyekan;
+  outline: none;
+}
+
+body {
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  font-family: iranyekan;
+  color: #707070;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  position: relative;
+  height: 100vh;
+  padding-top: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .time_btn {
+  all: unset;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 24px;
+  left: 5%;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 520px) {
+  main .time_btn {
+    top: 10px;
+    left: 43%;
+    -webkit-transform: translate(0%);
+            transform: translate(0%);
+  }
+}
+
+main .time_btn img {
+  width: 55px;
+  height: 55px;
+}
+
+main h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 520px) {
+  main h1 {
+    margin-top: 200px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  main h1 {
+    font-size: 25px;
+  }
+}
+
+main .answer {
+  direction: rtl;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-size: 20px;
+  margin-bottom: 50px;
+  font-weight: 300;
+  height: 100px;
+}
+
+main .answer .num {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 90px;
+  font-weight: bold;
+}
+
+main .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+}
+
+main .inputs input::-webkit-outer-spin-button,
+main .inputs input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+main .inputs input,
+main .inputs select {
+  border: 1px solid #010101;
+  outline: none;
+  margin-bottom: 25px;
+  width: 446px;
+  height: 50px;
+  padding: 0 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 300;
+  font-size: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  font-family: iranyekan;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 520px) {
+  main .inputs input,
+  main .inputs select {
+    width: 290px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  main .inputs input,
+  main .inputs select {
+    width: 250px;
+  }
+}
+
+main .inputs select {
+  z-index: 100;
+  background: url(../img/1.png) #ffffff;
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: 50%;
+}
+
+main .inputs select:invalid {
+  color: rgba(0, 0, 0, 0.568);
+}
+
+main .inputs select option {
+  padding: 0 30px 0 10px;
+  min-height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  font-family: iranyekan;
+}
+
+main .inputs select option[value=""] {
+  display: none;
+}
+
+main .btns {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 520px) {
+  main .btns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+main .btns #sub,
+main .btns #del {
+  width: 179px;
+  height: 60px;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+main .btns #sub {
+  background: #348D1F;
+}
+
+@media only screen and (max-width: 520px) {
+  main .btns #sub {
+    margin-bottom: 10px;
+  }
+}
+
+main .btns #del {
+  background: #D8D804;
+}
+
+.night {
+  background: #00051D;
+  color: #ffffff;
+}
+/*# sourceMappingURL=style.css.map */
