@@ -1,0 +1,15 @@
+{
+    "name": "sajede/calculator",
+    "authors": [
+        {
+            "name": "sajede2003",
+            "email": "sajededarzinia@gmail.com"
+        }
+    ],
+    "autoload":{
+        "psr-4": {
+            
+        }
+    },
+    "require": {}
+}

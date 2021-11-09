@@ -234,6 +234,12 @@ main .inputs select {
   border-radius: 4px;
 }
 
+/* input.oprator{
+  width: 30px !important;
+    height: 40px !important;
+    display: inline !important;
+    margin: 10px 3px; 
+} */
 @media only screen and (max-width: 520px) {
   main .inputs input,
   main .inputs select {
