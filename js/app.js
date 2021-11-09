@@ -48,36 +48,36 @@ del_btn.addEventListener("click", delet);
 var result;
 
 
-function calculate() {
-    let val_one = first_num.value;
-    let val_two = second_num.value;
-    let op_val = oprator.value;
-    if (val_one.trim() === "" || val_two.trim() === "" || op_val === "") {
-        alert(" please fill all the field ");
-    } else {
+// function calculate() {
+//     let val_one = first_num.value;
+//     let val_two = second_num.value;
+//     let op_val = oprator.value;
+//     if (val_one.trim() === "" || val_two.trim() === "" || op_val === "") {
+//         alert(" please fill all the field ");
+//     } else {
 
-        switch (op_val) {
-            case "+":
-                result = eval(val_one) + eval(val_two);
-                break;
-            case "-":
-                result = eval(val_one) - eval(val_two);
-                break;
-            case "*":
-                result = eval(val_one) * eval(val_two);
-                break;
-            case "/":
-                if (eval(val_two) === 0) {
-                    alert("The Number is Infinite")
-                } else {
-                    result = eval(val_one) / eval(val_two);
-                }
-                break;
-        }
+//         switch (op_val) {
+//             case "+":
+//                 result = eval(val_one) + eval(val_two);
+//                 break;
+//             case "-":
+//                 result = eval(val_one) - eval(val_two);
+//                 break;
+//             case "*":
+//                 result = eval(val_one) * eval(val_two);
+//                 break;
+//             case "/":
+//                 if (eval(val_two) === 0) {
+//                     alert("The Number is Infinite")
+//                 } else {
+//                     result = eval(val_one) / eval(val_two);
+//                 }
+//                 break;
+//         }
 
-        answer.textContent = result;
-    }
-}
+//         answer.textContent = result;
+//     }
+// }
 
 function delet() {
     first_num.value = "";
