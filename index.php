@@ -49,7 +49,7 @@ include './php/app.php';
 
 
 
-    <!-- <script src="js/app.js"></script> -->
+    <script src="js/app.js"></script>
 </body>
 
 
